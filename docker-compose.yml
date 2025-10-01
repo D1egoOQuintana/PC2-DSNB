@@ -1,0 +1,29 @@
+version: "3.8"
+services:
+  mysql_raro:
+    image: mysql:8.0
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpass
+      MYSQL_DATABASE: productosdb
+      MYSQL_USER: zkuser
+      MYSQL_PASSWORD: zkpass
+    ports:
+      - "3306:3306"
+    volumes:
+      - db_data:/var/lib/mysql
+
+  app_productos:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      ZK_DB_HOST: mysql_raro
+      ZK_DB_USR: zkuser
+      ZK_DB_PASS: zkpass
+      ZK_DB_NAME: productosdb
+    depends_on:
+      - mysql_raro
+
+volumes:
+  db_data:
