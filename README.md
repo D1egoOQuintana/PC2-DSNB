@@ -168,6 +168,6 @@ Repositorio con código y README ✅
 
 Video (máx 5 min) mostrando ejecución y pruebas ✅
 
-🔹 Autor: [Tu Nombre]
+🔹 Autor: Luis Diego Quintana Granados
 🔹 Curso: Desarrollo de Soluciones en la Nube – Tecsup
 🔹 Sección: 2025-2
