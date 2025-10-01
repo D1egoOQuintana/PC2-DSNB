@@ -38,8 +38,8 @@ App-productos/
 
 Clonar repositorio
 
-git clone https://github.com/TU-USUARIO/productos-app.git
-cd productos-app
+git clone ¿(https://github.com/D1egoOQuintana/PC2-DSNB.git
+cd App-prdocutos
 
 
 Construir y levantar contenedores
