@@ -17,13 +17,21 @@ sudo systemctl start docker
 
 📌 Estructura del proyecto
 App-productos/
+ 
  ├── src/
+ 
  │   ├── index.js        # Servidor Express
+
  │   ├── db.js           # Conexión a MySQL
+ 
  │   ├── routes.js       # Rutas API
+ 
  ├── package.json        # Dependencias Node
+ 
  ├── Dockerfile          # Imagen Node.js
+ 
  ├── docker-compose.yml  # Orquestación de servicios
+
  ├── README.md           # Documentación
 
 📌 Instalación y configuración
